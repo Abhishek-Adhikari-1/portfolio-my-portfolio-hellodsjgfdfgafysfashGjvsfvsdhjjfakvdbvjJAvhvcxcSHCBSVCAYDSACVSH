@@ -1,9 +1,890 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="" />
+		<meta name="color-scheme" content="light dark" />
+		<!--==================== UNICONS ====================-->
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+		<!--==================== SWIPER CSS ====================-->
+		<!-- <link rel="stylesheet" href="" /> -->
 
-</body>
+		<!--==================== CSS ====================-->
+		<link rel="stylesheet" href="styles/index.css" />
+		<title>Portfolio - Abhishek</title>
+	</head>
+	<body data-theme="light">
+		<dialog class="loader">
+			<div class="ring"></div>
+			<div class="ring"></div>
+			<div class="ring"></div>
+			<span class="text">Loading...</span>
+		</dialog>
+		<!--==================== HEADER ====================-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a data-href="/index.html" class="nav_logo">Abhishek</a>
+				<div class="nav_menu" id="nav-menu">
+					<ul class="nav_list grid">
+						<li class="nav_item">
+							<a data-href="#welcome_page" class="nav_link">
+								<div class="nav_link_hover active-link">
+									<i class="uil uil-wordpress-simple nav_icon"></i>
+									Welcome
+								</div>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a data-href="#home" class="nav_link">
+								<div class="nav_link_hover">
+									<i class="uil uil-estate nav_icon"></i>
+									Home
+								</div>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a data-href="#about" class="nav_link">
+								<div class="nav_link_hover">
+									<i class="uil uil-user nav_icon"></i>
+									About
+								</div>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a data-href="#resume" class="nav_link">
+								<div class="nav_link_hover">
+									<i class="uil uil-file-alt nav_icon"></i>
+									Resume
+								</div>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a data-href="#portfolio" class="nav_link">
+								<div class="nav_link_hover">
+									<i class="uil uil-scenery nav_icon"></i>
+									Portfolio
+								</div>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a data-href="#contact" class="nav_link">
+								<div class="nav_link_hover">
+									<i
+										class="uil uil-outgoing-call nav_icon"></i>
+									Contact
+								</div>
+							</a>
+						</li>
+					</ul>
+					<i class="uil uil-times nav_close" id="nav-close"></i>
+				</div>
+				<div class="nav_btns">
+					<div id="color-picker" class="color-picker">
+						<input type="radio" name="hue_color_picker" value="5" />
+						<input
+							type="radio"
+							name="hue_color_picker"
+							value="220"
+							checked />
+						<input
+							type="radio"
+							name="hue_color_picker"
+							value="162" />
+						<input
+							type="radio"
+							name="hue_color_picker"
+							value="260" />
+					</div>
+					<i
+						class="uil uil-setting theme_setting"
+						id="theme-setting"
+						title="Change Theme Color"></i>
+					<i
+						class="uil uil-sun change-theme"
+						id="theme-button"
+						title="Dark / Light Mode"></i>
+					<div class="nav_toggle" id="nav-toggle">
+						<i class="uil uil-apps"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!--==================== MAIN ====================-->
+		<main class="main">
+			<!--==================== WELCOME PAGE ====================-->
+			<section class="welcome_page" id="welcome_page">
+				<div class="welcome_page_content">
+					<div class="home_content_container">
+						<div id="target">
+							<h1>Welcome</h1>
+							<p>
+								Hello, there! I invite you to explore the world
+								I've crafted within these digital walls.
+							</p>
+							<div class="welcome_scroll">
+								<a data-href="#home">
+									<i
+										class="uil uil-mouse-alt welcome_scroll-mouse"></i>
+									<span class="welcome_scroll-name">
+										Scroll down
+									</span>
+									<i class="uil uil-arrow-to-bottom"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==================== HOME ====================-->
+			<div class="home_cube">
+				<div class="cube"></div>
+				<div class="cube"></div>
+				<div class="cube"></div>
+				<div class="cube"></div>
+				<div class="cube"></div>
+				<div class="cube"></div>
+			</div>
+			<section class="home section" id="home">
+				<div class="home_container container grid">
+					<div class="home_content grid">
+						<div class="home_image">
+							<svg
+								class="home_blob"
+								viewBox="0 0 550 591"
+								xmlns="http://www.w3.org/2000/svg">
+								<mask id="maskBlob" mask-type="alpha">
+									<path
+										d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+								</mask>
+								<g mask="url(#maskBlob)">
+									<path
+										d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+									<rect
+										x="37"
+										width="476"
+										height="630"
+										fill="url(#pattern0)" />
+								</g>
+								<rect
+									x="37"
+									width="476"
+									height="300"
+									fill="url(#pattern1)" />
+								<defs>
+									<pattern
+										id="pattern0"
+										patternContentUnits="objectBoundingBox"
+										width="1"
+										height="1">
+										<use
+											href="#imageBlob"
+											transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+									</pattern>
+									<pattern
+										id="pattern1"
+										patternContentUnits="objectBoundingBox"
+										width="1"
+										height="1">
+										<use
+											href="#imageBlob"
+											transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+									</pattern>
+									<image
+										class="home_img"
+										id="imageBlob"
+										width="640"
+										height="940"
+										xlink:href="images/profile.png" />
+								</defs>
+							</svg>
+						</div>
+						<div class="home_data">
+							<h1 class="home_title">Hi, <span>I'am</span></h1>
+							<h3 class="home_subtitle">
+								<span
+									class="typed"
+									data-typed-items="Abhishek Adhikari., a Frontend Developer., basic UI/UX Designer.">
+									a Frontend Developer.
+								</span>
+							</h3>
+							<p class="home_description">
+								Dedicated to producing web designs that not only
+								look stunning but also reflect the depth of
+								experience I bring to every project.
+							</p>
+							<a data-href="#contact" class="button">
+								Contact Me
+								<i class="uil uil-message"></i>
+								<span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== ABOUT ====================-->
+			<section class="about section" id="about">
+				<div class="area">
+					<ul class="circles">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="about_box container grid">
+					<div class="about_container">
+						<h3 class="section_title">About</h3>
+						<h2 class="section_subtitle">My Introduction</h2>
+						<div class="about_content">
+							<div class="about_data">
+								<p class="about_description">
+									My name is Abhishek Adhikari, a
+									<span>19-year-old</span>
+									developer passionately exploring both
+									frontend and backend development to shape my
+									future prospects. My expertise lies in
+									creating beautifully simple interfaces
+									through a combination of thoughtful
+									interactions and clean design patterns. I
+									take pride in my ability to code and bring
+									ideas to life in the browser. I value
+									simplicity in content structure and believe
+									in the power of clean, elegant design.
+									Coding is not just a skill for me; it's a
+									source of joy, and I am dedicated to honing
+									my craft to deliver high-quality and
+									aesthetically pleasing digital experiences.
+								</p>
+								<div class="about_info">
+									<div>
+										<span class="about_info-title">
+											02+
+										</span>
+										<span class="about_info-name">
+											Years <br />
+											experience
+										</span>
+									</div>
+									<div>
+										<span class="about_info-title">
+											07+
+										</span>
+										<span class="about_info-name">
+											Languages <br />
+											learned
+										</span>
+									</div>
+									<div>
+										<span class="about_info-title">
+											03+
+										</span>
+										<span class="about_info-name">
+											Programs <br />
+											winned
+										</span>
+									</div>
+								</div>
+								<a
+									href="images/CV.pdf"
+									class="button about_button"
+									download="Abhishek_Adhikari_CV">
+									Download Cv
+									<i
+										class="uil uil-download-alt button_icon"></i>
+									<span></span>
+								</a>
+							</div>
+							<div class="about_image">
+								<svg
+									class="about_blob"
+									viewBox="0 0 550 592"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskBorder" mask-type="alpha">
+										<path
+											d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+								   171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+								   448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+								   270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+								   439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+											fill="black" />
+									</mask>
+									<g mask="url(#maskBorder)">
+										<rect
+											x="37"
+											width="476"
+											height="630"
+											fill="url(#pattern2)" />
+
+										<path
+											d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+								   192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+								   580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+								   40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+								   175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+											stroke="black"
+											stroke-width="10" />
+									</g>
+
+									<rect
+										x="37"
+										width="476"
+										height="300"
+										fill="url(#pattern3)" />
+
+									<defs>
+										<pattern
+											id="pattern2"
+											patternContentUnits="objectBoundingBox"
+											width="1"
+											height="1">
+											<use
+												href="#imageBorder"
+												transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+										</pattern>
+
+										<pattern
+											id="pattern3"
+											patternContentUnits="objectBoundingBox"
+											width="1"
+											height="1">
+											<use
+												href="#imageBorder"
+												transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+										</pattern>
+
+										<!-- Insert your profile (recommended size: 640 x 940) -->
+										<image
+											class="about_img"
+											id="imageBorder"
+											width="640"
+											height="940"
+											href="images/My_Photo.png" />
+									</defs>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== RESUME ====================-->
+			<section class="resume section" id="resume">
+				<div class="resume_box container grid">
+					<div class="resume_container">
+						<h3 class="section_title">Resume</h3>
+						<h2 class="section_subtitle">My personal journey</h2>
+						<div class="resume_cont">
+							<div class="resume_tabs">
+								<ul>
+									<li>
+										<a
+											data-href="#education"
+											class="current">
+											Education
+										</a>
+									</li>
+									<li>
+										<a data-href="#skills"> Skills </a>
+									</li>
+									<li>
+										<a data-href="#awards"> Awards </a>
+									</li>
+								</ul>
+							</div>
+							<div class="resume_content">
+								<div id="education" class="page">
+									<h2 class="page_title">Education</h2>
+									<div class="resume_wrap">
+										<div class="icon">
+											<i
+												class="uil uil-graduation-cap"></i>
+										</div>
+										<span class="icon_line"></span>
+										<div class="resume_wrap_content">
+											<span class="date">
+												<i class="uil uil-calender"></i>
+												2021 - 2023
+											</span>
+											<h3>
+												+2 Science Capital College &
+												Research Center
+											</h3>
+											<span class="place">
+												~ Kathmandu, Nepal
+											</span>
+											<p>
+												I attended +2 Science at Capital
+												College & Research Center in
+												Kathmandu, Nepal from 2021 to
+												2023. This high school provided
+												a nurturing environment where I
+												explored my passion for science,
+												developed critical thinking
+												skills, and made lifelong
+												friends. It was a formative
+												period that prepared me for
+												higher education and enriched my
+												academic journey.
+											</p>
+										</div>
+									</div>
+									<div class="resume_wrap">
+										<div class="icon">
+											<i
+												class="uil uil-graduation-cap"></i>
+										</div>
+										<div class="icon_line"></div>
+										<div class="resume_wrap_content">
+											<span class="date">
+												<i class="uil uil-calender"></i>
+												2015 - 2021
+											</span>
+											<h3>
+												Balmeeki Memorial [Secondary
+												School]
+											</h3>
+											<span class="place">
+												~ Morang, Nepal
+											</span>
+											<p>
+												I attended Balmeeki Memorial
+												Secondary School in Morang,
+												Nepal from 2015 to 2021,
+												completing my secondary
+												education. The school provided a
+												supportive environment for
+												academic and personal growth. It
+												played a significant role in
+												building my educational
+												foundation, preparing me for
+												higher education, and fostering
+												lifelong friendships.
+											</p>
+										</div>
+									</div>
+									<div class="resume_wrap">
+										<div class="icon">
+											<i
+												class="uil uil-graduation-cap"></i>
+										</div>
+										<div class="resume_wrap_content">
+											<span class="date">
+												<i class="uil uil-calender"></i>
+												2008 - 2015
+											</span>
+											<h3>
+												K.B Memorial [Primary School]
+											</h3>
+											<span class="place">
+												~ Morang, Nepal
+											</span>
+											<p>
+												From 2008 to 2015, I attended
+												K.B. Memorial Primary School in
+												Morang, Nepal, where my academic
+												journey began. The school's
+												nurturing environment helped me
+												develop essential skills and a
+												passion for learning. K.B.
+												Memorial holds a special place
+												in my heart as it nurtured my
+												love for knowledge and
+												friendships, laying a strong
+												foundation for my educational
+												journey.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div id="skills" class="page">
+									<h2 class="page_title">Technical Level</h2>
+									<div class="skills_wrap grid">
+										<div class="skills_left">
+											<h3>FrontEnd Skills</h3>
+											<div class="skills_left_grid grid">
+												<div class="skill_bar">
+													<div class="info">
+														<p>HTML</p>
+														<small data-per="91">
+															91%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="skill_bar">
+													<div class="info">
+														<p>JAVASCRIPT</p>
+														<small data-per="68">
+															72%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="skill_bar">
+													<div class="info">
+														<p>CSS</p>
+														<small data-per="75">
+															75%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="skill_bar">
+													<div class="info">
+														<p>FIGMA</p>
+														<small data-per="34">
+															34%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="skill_bar">
+													<div class="info">
+														<p>REACT</p>
+														<small data-per="46">
+															46%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="skill_bar">
+													<div class="info">
+														<p>JQUERY</p>
+														<small data-per="70">
+															70%
+														</small>
+													</div>
+													<div class="bar">
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="skills_right">
+											<h3>BackEnd Skills</h3>
+											<div class="skills_right_grid grid">
+												<div class="box">
+													<div class="circle"></div>
+													<div class="text">
+														<p data-per="63">63%</p>
+														<small>Node Js</small>
+													</div>
+												</div>
+												<div class="box">
+													<div class="circle"></div>
+													<div class="text">
+														<p data-per="85">85%</p>
+														<small>Php</small>
+													</div>
+												</div>
+												<div class="box">
+													<div class="circle"></div>
+													<div class="text">
+														<p data-per="39">39%</p>
+														<small>Python</small>
+													</div>
+												</div>
+												<div class="box">
+													<div class="circle"></div>
+													<div class="text">
+														<p data-per="67">67%</p>
+														<small>C / C#</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="awards" class="page"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== PORTFOLIO ====================-->
+			<section class="portfolio section" id="portfolio">
+				<div class="portfolio_box container grid">
+					<div class="portfolio_container">
+						<h3 class="section_title">Portfolio</h3>
+						<h2 class="section_subtitle">My Works</h2>
+						<div class="portfolio_content grid">
+							<dialog class="modal" id="imageModal">
+								<span class="close" id="closeModal">
+									&times;
+								</span>
+								<img class="modal-content" id="modalImage" />
+							</dialog>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/eight.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">
+									User Verify System
+								</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/seven.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">
+									Chat App (Python)
+								</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/six.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">
+									Chat App (Node JS)
+								</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/five.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">
+									Dynamic Calculator
+								</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/four.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">Todo App</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/three.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">School Website</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/two.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">Weather App</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+							<div class="portfolio_card">
+								<div class="image">
+									<img src="./images/one.PNG" alt="" />
+								</div>
+								<h3 class="portfolio_title">News Feed</h3>
+								<a class="portfolio_btn">
+									Demo <i class="uil uil-arrow-up-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== CONTACT ME ====================-->
+			<section class="contact section" id="contact">
+				<div class="contact_box container grid">
+					<div class="contact_container">
+						<h3 class="section_title">Contact Me</h3>
+						<h2 class="section_subtitle">Get in touch</h2>
+						<div class="contact_content grid">
+							<div class="contact_information_container">
+								<div class="contact_information">
+									<i class="uil uil-phone contact_icon"></i>
+									<div>
+										<h3 class="contact_title">Call Me</h3>
+										<span class="contact_subtitle">
+											+977 9811343299
+										</span>
+									</div>
+								</div>
+								<div class="contact_information">
+									<i
+										class="uil uil-envelope contact_icon"></i>
+									<div>
+										<h3 class="contact_title">
+											E-mail address
+										</h3>
+										<span class="contact_subtitle">
+											adhikaryabhishek209@gmail.com
+										</span>
+									</div>
+								</div>
+								<div class="contact_information">
+									<i
+										class="uil uil-map-marker contact_icon"></i>
+									<div>
+										<h3 class="contact_title">Location</h3>
+										<span class="contact_subtitle">
+											Madhyapurthimi-03, Kaushaltar
+										</span>
+									</div>
+								</div>
+							</div>
+							<form class="contact_form grid">
+								<div class="contact_input_box">
+									<label for="id-name" class="contact_label">
+										Name
+									</label>
+									<span id="name-error" class="error"></span>
+									<input
+										type="text"
+										class="contact_input"
+										id="id-name"
+										autocomplete="off" />
+								</div>
+								<div class="contact_input_box">
+									<label for="id-email" class="contact_label">
+										Email address
+									</label>
+									<span id="email-error" class="error"></span>
+									<input
+										type="text"
+										class="contact_input"
+										id="id-email"
+										autocomplete="off" />
+								</div>
+								<div class="contact_input_box">
+									<label
+										for="id-project"
+										class="contact_label">
+										Project
+									</label>
+									<span
+										id="project-error"
+										class="error"></span>
+									<input
+										type="text"
+										class="contact_input"
+										id="id-project"
+										autocomplete="off" />
+								</div>
+								<div class="contact_input_box">
+									<label for="textarea" class="contact_label">
+										Message
+									</label>
+									<textarea
+										id="textarea"
+										cols="0"
+										rows="5"
+										class="contact_input"></textarea>
+								</div>
+								<div>
+									<a data-href="#" class="button">
+										Send Message
+										<i class="uil uil-message"></i>
+										<span></span>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--==================== FOOTER ====================-->
+		<footer class="footer">
+			<svg
+				class="waves"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28"
+				preserveAspectRatio="none"
+				shape-rendering="auto">
+				<defs>
+					<path
+						id="gentle-wave"
+						d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" />
+					<use xlink:href="#gentle-wave" x="48" y="3" />
+					<use xlink:href="#gentle-wave" x="48" y="5" />
+					<use xlink:href="#gentle-wave" x="48" y="7" />
+				</g>
+			</svg>
+			<ul class="social_icons">
+				<li>
+					<a
+						href="https://www.facebook.com/profile.php?id=100063712182245"
+						target="_blank">
+						<i class="uil uil-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.instagram.com/unknown_account835/"
+						target="_blank">
+						<i class="uil uil-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://wa.me/9811343299" target="_blank">
+						<i class="uil uil-whatsapp"></i>
+					</a>
+				</li>
+			</ul>
+			<p>©&nbsp;2021 Abhishek || All rights reserved.</p>
+		</footer>
+
+		<!--==================== TOSTER DIV ====================-->
+		<div id="toast-container"></div>
+
+		<!--==================== SCROLL TOP ====================-->
+
+		<!--==================== PARTICLE JS ====================-->
+		<script src="js/particles_js.js"></script>
+
+		<!--==================== MAIN JS ====================-->
+		<script src="js/index.js"></script>
+	</body>
 </html>
